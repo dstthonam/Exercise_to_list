@@ -1,0 +1,107 @@
+/**
+* 전역 속성 적용
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 링크 하버에만 빨간색 넣기 */
+a, a:link, a:visited, a:active{
+  text-decoration: none;
+  color: rgb(77, 57, 39);
+}
+a:hover {
+  color: rgb(255, 80, 80);
+}
+li {
+  list-style-type: none;
+}
+body {
+  width: 2600px;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Anton", sans-serif;
+}
+header {
+  width: 50%;
+  margin: 0 0 0 300px;
+  padding: 40px;
+  font-size: 1.6rem;
+}
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: rgb(243, 145, 52);
+  text-shadow: 2px 2px 3px black;
+  letter-spacing: 3px;
+}
+.disable {
+  visibility: hidden;
+}
+/* 부위(운동 링크) 글자만 작게 만들기 */
+#minimum {
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+/* 메뉴바 */
+.mnbr-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* 메뉴바 양 옆에 동그란 느낌주기 */
+.border-style:nth-child(2) {
+  border-radius: 30px 0 0 30px;
+}
+.border-style:nth-last-child(1) {
+  border-radius: 0 30px 30px 0;
+}
+.mnbr {
+  width: 190px;
+  height: 60px;
+  line-height: 60px;
+  padding: 10px 5px;
+  background-color: rgb(255, 165, 80);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  /* 박스 새도우를 주면서 메뉴끼리 공간 분할 */
+  box-shadow: inset 1px 1px 5px rgb(253, 146, 45) !important;
+}
+.mnbr-table ul {
+  /* display: none; */
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px 1px rgb(255, 157, 66);
+}
+/* 안쪽에 그림자 속성 넣기 */
+.box-color-change:hover {
+  box-shadow: inset 1px 1px 15px rgb(253, 146, 45) !important;
+}
+.mnbr-table li {
+  width: auto;
+  min-height: 40px;
+  line-height: 30px;
+  background-color: rgb(255, 189, 128);
+  color: rgb(58, 35, 14);
+  font-size: 1.3rem;
+  font-weight: 800;
+  word-break: keep-all;
+  white-space: pre-wrap;
+  padding: 10px;
+  border: 1px solid rgb(255, 180, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mnbr-table li :hover{
+  text-shadow: 1px 1px 2px rgb(182, 130, 81);
+  border-radius: 20px;
+}
+.link-list {
+  
+
+}
+
+
